@@ -4,12 +4,12 @@ import main from '../assets/images/main.svg'
 import styled from 'styled-components'
 
 const Landing = () => {
-  return
-   <Wrapper>
+  return(
+  <Wrapper>
     <nav>
         <img src={logo} alt="jobify"  className='logo'/> {/*add logo with class name*/}
     </nav>
-    <div className="container">
+    <div className='container page'>
         <div className='info'>
             <h1>
                 job <span>tracking</span> app
@@ -22,6 +22,7 @@ const Landing = () => {
         <img src={main} alt='job hunt' className='img main-img' />
     </div>
   </Wrapper>
+  )
 }
 
 const Wrapper = styled.main`
