@@ -1,12 +1,13 @@
 import logo from '../assets/images/logo.svg'
-import main from '../assets/images/main.svg'
+import main from '../assets/images/main-alternative.svg'
 import Wrapper from '../assets/wrappers/LandingPage'
+import Logo from '../components/Logo'
 
 const Landing = () => {
   return(
   <Wrapper>
     <nav>
-        <img src={logo} alt="jobify" className='logo'/> {/*add logo with class name*/}
+        <Logo />
     </nav>
     <div className='container page'>
         <div className='info'>
@@ -24,7 +25,7 @@ const Landing = () => {
   )
 }
 
-const Wrapper = styled.main`
+Wrapper = styled.main`
   nav {
     width: var(--fluid-width);
     max-width: var(--max-width);
