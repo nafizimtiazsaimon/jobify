@@ -1,12 +1,16 @@
 import Landing from "./pages/Landing";
-import styled from 'styled-components';
+import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <h1>jobify</h1>
-      <Landing/>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<div>Dashboard</div>} />
+      <Route path="/register" element={<div>Register</div>} />
+      <Route path="/landings" element={<Landing />} />
+      <Route path="*" element={<h1>Error</h1>} />
+    </Routes>
+    </BrowserRouter>
   )
 }
 
