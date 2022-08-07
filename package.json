@@ -1,0 +1,24 @@
+{
+  "name": "jobify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nafizimtiazsaimon/jobify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nafizimtiazsaimon/jobify/issues"
+  },
+  "homepage": "https://github.com/nafizimtiazsaimon/jobify#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
