@@ -1,13 +1,21 @@
-const register = async (req, res) => {
-    res.send('register user')
-}
+import User from "../models/User.js";
+
+const register = async (req, res, next) => {
+  try {
+    const user = await User.create(req.body);
+    res.status(201).json({ user });
+  } catch (error) {
+    next(error);
+    //res.status(500).json({ msg: "error" });
+  }
+};
 
 const login = async (req, res) => {
-    res.send('login user')
-}
+  res.send("login user");
+};
 
 const updateUser = async (req, res) => {
-    res.send('updateUser')
-}
+  res.send("updateUser");
+};
 
-export {register, login, updateUser}
+export { register, login, updateUser };

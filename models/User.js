@@ -1,4 +1,4 @@
-import mongoose from "monngoose";
+import mongoose from "mongoose";
 import validator from "validator";
 
 const UserSchema = new mongoose.Schema({
